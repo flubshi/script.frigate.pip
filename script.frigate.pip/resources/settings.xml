@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<settings version="1">
+  <section id="script.frigate.pip">
+
+    <!-- ============================================================ Connection -->
+    <category id="connection" label="32100">
+      <group id="setup" label="32105">
+        <setting id="run_setup" type="action" label="32106" help="32107">
+          <level>0</level>
+          <data>RunScript(script.frigate.pip,action=setup)</data>
+          <constraints>
+            <allowempty>true</allowempty>
+          </constraints>
+          <control type="button" format="action">
+            <close>true</close>
+          </control>
+        </setting>
+      </group>
+      <group id="1" label="32101">
+        <setting id="host" type="string" label="32110" help="32111">
+          <level>0</level>
+          <default/>
+          <constraints>
+            <allowempty>true</allowempty>
+          </constraints>
+          <control type="edit" format="string">
+            <heading>32110</heading>
+          </control>
+        </setting>
+        <setting id="port" type="integer" label="32112" help="32114">
+          <level>0</level>
+          <default>8971</default>
+          <constraints>
+            <minimum>1</minimum>
+            <maximum>65535</maximum>
+          </constraints>
+          <control type="edit" format="integer">
+            <heading>32112</heading>
+          </control>
+        </setting>
+        <setting id="use_https" type="boolean" label="32113" help="32114">
+          <level>0</level>
+          <default>true</default>
+          <control type="toggle"/>
+        </setting>
+      </group>
+
+      <group id="2" label="32102">
+        <setting id="username" type="string" label="32115" help="32116">
+          <level>0</level>
+          <default/>
+          <constraints>
+            <allowempty>true</allowempty>
+          </constraints>
+          <control type="edit" format="string">
+            <heading>32115</heading>
+          </control>
+        </setting>
+        <setting id="password" type="string" label="32117">
+          <level>0</level>
+          <default/>
+          <constraints>
+            <allowempty>true</allowempty>
+          </constraints>
+          <control type="edit" format="string">
+            <heading>32117</heading>
+            <hidden>true</hidden>
+          </control>
+        </setting>
+      </group>
+
+      <group id="3" label="32103">
+        <setting id="tls_mode" type="integer" label="32120" help="32127">
+          <level>0</level>
+          <default>0</default>
+          <constraints>
+            <options>
+              <option label="32121">0</option>
+              <option label="32122">1</option>
+              <option label="32123">2</option>
+            </options>
+          </constraints>
+          <dependencies>
+            <dependency type="visible" setting="use_https">true</dependency>
+          </dependencies>
+          <control type="spinner" format="string"/>
+        </setting>
+        <setting id="tls_fingerprint" type="string" label="32124" help="32128">
+          <level>0</level>
+          <default/>
+          <constraints>
+            <allowempty>true</allowempty>
+          </constraints>
+          <dependencies>
+            <dependency type="visible">
+              <and>
+                <condition setting="use_https">true</condition>
+                <condition setting="tls_mode">0</condition>
+              </and>
+            </dependency>
+          </dependencies>
+          <control type="edit" format="string">
+            <heading>32124</heading>
+          </control>
+        </setting>
+        <setting id="trust_cert" type="action" label="32125" help="32129">
+          <level>0</level>
+          <data>RunScript(script.frigate.pip,action=trustcert)</data>
+          <constraints>
+            <allowempty>true</allowempty>
+          </constraints>
+          <dependencies>
+            <dependency type="visible" setting="use_https">true</dependency>
+          </dependencies>
+          <control type="button" format="action">
+            <close>true</close>
+          </control>
+        </setting>
+      </group>
+
+      <group id="4" label="32104">
+        <setting id="test_connection" type="action" label="32126" help="32130">
+          <level>0</level>
+          <data>RunScript(script.frigate.pip,action=test)</data>
+          <constraints>
+            <allowempty>true</allowempty>
+          </constraints>
+          <control type="button" format="action">
+            <close>true</close>
+          </control>
+        </setting>
+      </group>
+    </category>
+
+    <!-- ============================================================ Overlay -->
+    <category id="overlay" label="32200">
+      <group id="1" label="32201">
+        <setting id="position" type="integer" label="32210">
+          <level>0</level>
+          <default>0</default>
+          <constraints>
+            <options>
+              <option label="32211">0</option>
+              <option label="32212">1</option>
+              <option label="32213">2</option>
+              <option label="32214">3</option>
+            </options>
+          </constraints>
+          <control type="spinner" format="string"/>
+        </setting>
+        <setting id="size_pct" type="integer" label="32215">
+          <level>0</level>
+          <default>30</default>
+          <constraints>
+            <minimum>15</minimum>
+            <step>5</step>
+            <maximum>60</maximum>
+          </constraints>
+          <control type="slider" format="integer">
+            <popup>false</popup>
+          </control>
+        </setting>
+        <setting id="bbox" type="boolean" label="32219">
+          <level>0</level>
+          <default>false</default>
+          <control type="toggle"/>
+        </setting>
+        <setting id="timestamp" type="boolean" label="32220" help="32224">
+          <level>0</level>
+          <default>true</default>
+          <control type="toggle"/>
+        </setting>
+      </group>
+
+      <group id="2" label="32202">
+        <setting id="duration" type="integer" label="32216">
+          <level>0</level>
+          <default>30</default>
+          <constraints>
+            <minimum>0</minimum>
+            <step>5</step>
+            <maximum>600</maximum>
+          </constraints>
+          <control type="slider" format="integer">
+            <popup>false</popup>
+          </control>
+        </setting>
+        <setting id="reshow_s" type="integer" label="32240" help="32241">
+          <level>0</level>
+          <default>4</default>
+          <constraints>
+            <minimum>0</minimum>
+            <step>1</step>
+            <maximum>30</maximum>
+          </constraints>
+          <control type="slider" format="integer">
+            <popup>false</popup>
+          </control>
+        </setting>
+        <setting id="show_hint" type="boolean" label="32242" help="32243">
+          <level>0</level>
+          <default>true</default>
+          <control type="toggle"/>
+        </setting>
+        <setting id="switch_key" type="integer" label="32234" help="32235">
+          <level>0</level>
+          <default>0</default>
+          <constraints>
+            <options>
+              <option label="32236">0</option>
+              <option label="32237">1</option>
+              <option label="32238">2</option>
+              <option label="32239">3</option>
+            </options>
+          </constraints>
+          <control type="spinner" format="string"/>
+        </setting>
+        <setting id="interval_ms" type="integer" label="32221" help="32225">
+          <level>0</level>
+          <default>250</default>
+          <constraints>
+            <minimum>100</minimum>
+            <step>50</step>
+            <maximum>2000</maximum>
+          </constraints>
+          <control type="slider" format="integer">
+            <popup>false</popup>
+          </control>
+        </setting>
+        <setting id="default_camera" type="string" label="32222" help="32223">
+          <level>0</level>
+          <default/>
+          <constraints>
+            <allowempty>true</allowempty>
+          </constraints>
+          <control type="edit" format="string">
+            <heading>32222</heading>
+          </control>
+        </setting>
+      </group>
+    </category>
+
+    <!-- ============================================================ Zoom -->
+    <category id="zoom" label="32400">
+      <group id="1" label="32401">
+        <setting id="zoom_enabled" type="boolean" label="32410" help="32411">
+          <level>0</level>
+          <default>false</default>
+          <control type="toggle"/>
+        </setting>
+        <setting id="ask_region" type="boolean" label="32412" help="32413">
+          <level>0</level>
+          <default>true</default>
+          <dependencies>
+            <dependency type="visible" setting="zoom_enabled">true</dependency>
+          </dependencies>
+          <control type="toggle"/>
+        </setting>
+        <setting id="edit_region" type="action" label="32414" help="32415">
+          <level>0</level>
+          <data>RunScript(script.frigate.pip,action=roi)</data>
+          <constraints>
+            <allowempty>true</allowempty>
+          </constraints>
+          <dependencies>
+            <dependency type="visible" setting="zoom_enabled">true</dependency>
+          </dependencies>
+          <control type="button" format="action">
+            <close>true</close>
+          </control>
+        </setting>
+      </group>
+    </category>
+
+    <!-- ============================================================ Camera full screen -->
+    <category id="live" label="32500">
+      <group id="1" label="32501">
+        <setting id="rtsp_host" type="string" label="32510" help="32511">
+          <level>0</level>
+          <default/>
+          <constraints>
+            <allowempty>true</allowempty>
+          </constraints>
+          <control type="edit" format="string">
+            <heading>32510</heading>
+          </control>
+        </setting>
+        <setting id="rtsp_port" type="integer" label="32512">
+          <level>0</level>
+          <default>8554</default>
+          <constraints>
+            <minimum>1</minimum>
+            <maximum>65535</maximum>
+          </constraints>
+          <control type="edit" format="integer">
+            <heading>32512</heading>
+          </control>
+        </setting>
+        <setting id="rtsp_user" type="string" label="32513">
+          <level>0</level>
+          <default/>
+          <constraints>
+            <allowempty>true</allowempty>
+          </constraints>
+          <control type="edit" format="string">
+            <heading>32513</heading>
+          </control>
+        </setting>
+        <setting id="rtsp_password" type="string" label="32514">
+          <level>0</level>
+          <default/>
+          <constraints>
+            <allowempty>true</allowempty>
+          </constraints>
+          <control type="edit" format="string">
+            <heading>32514</heading>
+            <hidden>true</hidden>
+          </control>
+        </setting>
+        <setting id="rtsp_stream" type="string" label="32515" help="32516">
+          <level>0</level>
+          <default>{camera}</default>
+          <constraints>
+            <allowempty>true</allowempty>
+          </constraints>
+          <control type="edit" format="string">
+            <heading>32515</heading>
+          </control>
+        </setting>
+        <setting id="resume_after" type="boolean" label="32517" help="32518">
+          <level>0</level>
+          <default>true</default>
+          <control type="toggle"/>
+        </setting>
+      </group>
+    </category>
+
+    <!-- ============================================================ Monitoring -->
+    <category id="monitoring" label="32300">
+      <group id="1" label="32301">
+        <setting id="warn_ms" type="integer" label="32310" help="32314">
+          <level>0</level>
+          <default>1500</default>
+          <constraints>
+            <minimum>500</minimum>
+            <step>250</step>
+            <maximum>10000</maximum>
+          </constraints>
+          <control type="slider" format="integer">
+            <popup>false</popup>
+          </control>
+        </setting>
+        <setting id="freeze_ms" type="integer" label="32311" help="32314">
+          <level>0</level>
+          <default>4000</default>
+          <constraints>
+            <minimum>1000</minimum>
+            <step>500</step>
+            <maximum>30000</maximum>
+          </constraints>
+          <control type="slider" format="integer">
+            <popup>false</popup>
+          </control>
+        </setting>
+        <setting id="use_stats" type="boolean" label="32313" help="32315">
+          <level>0</level>
+          <default>true</default>
+          <control type="toggle"/>
+        </setting>
+        <setting id="notify_errors" type="boolean" label="32312">
+          <level>0</level>
+          <default>false</default>
+          <control type="toggle"/>
+        </setting>
+      </group>
+    </category>
+
+  </section>
+</settings>

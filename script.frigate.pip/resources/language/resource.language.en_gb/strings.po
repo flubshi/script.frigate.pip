@@ -1,0 +1,989 @@
+# Kodi Media Center language file
+# Addon Name: Frigate PiP
+# Addon id: script.frigate.pip
+# Addon Provider: flubshi
+msgid ""
+msgstr ""
+"Project-Id-Version: script.frigate.pip\n"
+"Report-Msgid-Bugs-To: https://github.com/flubshi/script.frigate.pip/issues\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en_GB\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgctxt "#32000"
+msgid "."
+msgstr ""
+
+msgctxt "#32001"
+msgid "Frigate PiP is not set up yet.[CR]Start the setup wizard now?"
+msgstr ""
+
+msgctxt "#32002"
+msgid "Frigate PiP is not set up yet – open the add-on to start the setup"
+msgstr ""
+
+msgctxt "#32003"
+msgid "Unknown camera: {cameras}"
+msgstr ""
+
+msgctxt "#32004"
+msgid "Zoom not available: the Python library Pillow is missing"
+msgstr ""
+
+msgctxt "#32005"
+msgid "Zoom is switched off in the settings"
+msgstr ""
+
+msgctxt "#32006"
+msgid "{camera}: whole picture saved"
+msgstr ""
+
+msgctxt "#32007"
+msgid "{camera}: section {zoom} saved"
+msgstr ""
+
+msgctxt "#32008"
+msgid "Frigate PiP – choose camera"
+msgstr ""
+
+msgctxt "#32009"
+msgid "All cameras ({count})"
+msgstr ""
+
+msgctxt "#32010"
+msgid "{camera} – image section"
+msgstr ""
+
+msgctxt "#32011"
+msgid "Saved section ({zoom})"
+msgstr ""
+
+msgctxt "#32012"
+msgid "Whole picture"
+msgstr ""
+
+msgctxt "#32013"
+msgid "Define new section …"
+msgstr ""
+
+msgctxt "#32014"
+msgid "Camera list not available – run the connection test in the settings"
+msgstr ""
+
+msgctxt "#32015"
+msgid "No active cameras found"
+msgstr ""
+
+msgctxt "#32016"
+msgid "Frigate PiP – confirm certificate"
+msgstr ""
+
+msgctxt "#32017"
+msgid "First connection to {host}:{port}.[CR]SHA-256 fingerprint:[CR]{fingerprint}[CR]Trust this certificate permanently?"
+msgstr ""
+
+msgctxt "#32018"
+msgid "Certificate not confirmed – see settings"
+msgstr ""
+
+msgctxt "#32019"
+msgid "Frigate not reachable: {error}"
+msgstr ""
+
+msgctxt "#32020"
+msgid "Unknown action: {action}"
+msgstr ""
+
+msgctxt "#32021"
+msgid "Background service is not running – enable the add-on or restart Kodi"
+msgstr ""
+
+msgctxt "#32022"
+msgid "Camera stream {camera} could not be started – check the RTSP settings"
+msgstr ""
+
+msgctxt "#32023"
+msgid "Zoom not possible: {reason}"
+msgstr ""
+
+msgctxt "#32024"
+msgid "{camera}: {status}"
+msgstr ""
+
+msgctxt "#32025"
+msgid "WARNING: The certificate has CHANGED.[CR]New SHA-256 fingerprint:[CR]{fingerprint}[CR]Frigate creates a new built-in certificate when its container is recreated. Compare the fingerprint on the Frigate host before you confirm."
+msgstr ""
+
+msgctxt "#32026"
+msgid "Server {host}:{port}[CR]SHA-256 fingerprint:[CR]{fingerprint}[CR]Trust this certificate?"
+msgstr ""
+
+msgctxt "#32027"
+msgid "This certificate is already trusted:[CR]{fingerprint}"
+msgstr ""
+
+msgctxt "#32028"
+msgid "Certificate saved"
+msgstr ""
+
+msgctxt "#32029"
+msgid "Please enter the Frigate server first or run the setup wizard."
+msgstr ""
+
+msgctxt "#32030"
+msgid "HTTPS is switched off – there is no certificate to check."
+msgstr ""
+
+msgctxt "#32031"
+msgid "Connection to {host}:{port} failed:[CR]{error}"
+msgstr ""
+
+msgctxt "#32032"
+msgid "Unexpected error – details in kodi.log"
+msgstr ""
+
+msgctxt "#32033"
+msgid "Connection test"
+msgstr ""
+
+msgctxt "#32034"
+msgid "Testing connection …"
+msgstr ""
+
+msgctxt "#32035"
+msgid "Frigate – {camera}"
+msgstr ""
+
+msgctxt "#32100"
+msgid "Connection"
+msgstr ""
+
+msgctxt "#32101"
+msgid "Frigate server"
+msgstr ""
+
+msgctxt "#32102"
+msgid "Login"
+msgstr ""
+
+msgctxt "#32103"
+msgid "Certificate (HTTPS)"
+msgstr ""
+
+msgctxt "#32104"
+msgid "Tools"
+msgstr ""
+
+msgctxt "#32105"
+msgid "Setup"
+msgstr ""
+
+msgctxt "#32106"
+msgid "Run setup wizard"
+msgstr ""
+
+msgctxt "#32107"
+msgid "Guides you through server address, certificate, login and default camera."
+msgstr ""
+
+msgctxt "#32110"
+msgid "Host or IP address"
+msgstr ""
+
+msgctxt "#32111"
+msgid "Address of the Frigate server, e.g. 192.168.1.10 or frigate.local"
+msgstr ""
+
+msgctxt "#32112"
+msgid "Port"
+msgstr ""
+
+msgctxt "#32113"
+msgid "Use HTTPS"
+msgstr ""
+
+msgctxt "#32114"
+msgid "Port 8971 = authenticated API with HTTPS. Port 5000 = internal API without login (HTTP, only if exposed)."
+msgstr ""
+
+msgctxt "#32115"
+msgid "User name"
+msgstr ""
+
+msgctxt "#32116"
+msgid "Frigate user, ideally with the \"viewer\" role. Leave empty for port 5000."
+msgstr ""
+
+msgctxt "#32117"
+msgid "Password"
+msgstr ""
+
+msgctxt "#32120"
+msgid "Certificate check"
+msgstr ""
+
+msgctxt "#32121"
+msgid "Pin fingerprint (recommended)"
+msgstr ""
+
+msgctxt "#32122"
+msgid "Verify with system CAs"
+msgstr ""
+
+msgctxt "#32123"
+msgid "No verification (insecure)"
+msgstr ""
+
+msgctxt "#32124"
+msgid "SHA-256 fingerprint"
+msgstr ""
+
+msgctxt "#32125"
+msgid "Fetch and trust certificate"
+msgstr ""
+
+msgctxt "#32126"
+msgid "Test connection"
+msgstr ""
+
+msgctxt "#32127"
+msgid "Pinning accepts exactly the confirmed certificate (works with self-signed certificates). System CAs require a valid certificate for this host name. 'No verification' accepts any certificate and should only be used deliberately."
+msgstr ""
+
+msgctxt "#32128"
+msgid "Filled in by \"Fetch and trust certificate\". A different certificate is rejected."
+msgstr ""
+
+msgctxt "#32129"
+msgid "Connects to the server, shows the certificate fingerprint and stores it after confirmation."
+msgstr ""
+
+msgctxt "#32130"
+msgid "Checks TLS, login, camera list, pictures, statistics and RTSP and shows a report."
+msgstr ""
+
+msgctxt "#32200"
+msgid "Overlay"
+msgstr ""
+
+msgctxt "#32201"
+msgid "Appearance"
+msgstr ""
+
+msgctxt "#32202"
+msgid "Behaviour"
+msgstr ""
+
+msgctxt "#32210"
+msgid "Position"
+msgstr ""
+
+msgctxt "#32211"
+msgid "Top right"
+msgstr ""
+
+msgctxt "#32212"
+msgid "Top left"
+msgstr ""
+
+msgctxt "#32213"
+msgid "Bottom right"
+msgstr ""
+
+msgctxt "#32214"
+msgid "Bottom left"
+msgstr ""
+
+msgctxt "#32215"
+msgid "Width per camera (% of screen width)"
+msgstr ""
+
+msgctxt "#32216"
+msgid "Display time in seconds (0 = until closed)"
+msgstr ""
+
+msgctxt "#32219"
+msgid "Show object boxes (bounding boxes)"
+msgstr ""
+
+msgctxt "#32220"
+msgid "Show timestamp in picture"
+msgstr ""
+
+msgctxt "#32221"
+msgid "Polling interval (ms)"
+msgstr ""
+
+msgctxt "#32222"
+msgid "Default camera(s)"
+msgstr ""
+
+msgctxt "#32223"
+msgid "Used when no camera is given (e.g. toggle key). Separate several cameras with +. Empty = ask."
+msgstr ""
+
+msgctxt "#32224"
+msgid "Frigate draws the frame time into the picture – a stopped clock makes a frozen picture obvious."
+msgstr ""
+
+msgctxt "#32225"
+msgid "Frigate updates the picture at the detect frame rate (typically 5 fps); polling faster than every 200 ms brings no benefit."
+msgstr ""
+
+msgctxt "#32234"
+msgid "Key for camera full screen"
+msgstr ""
+
+msgctxt "#32235"
+msgid "Closes the overlay and plays the camera's RTSP stream in the Kodi video player. Afterwards the previous playback continues."
+msgstr ""
+
+msgctxt "#32236"
+msgid "OK (only during full screen video)"
+msgstr ""
+
+msgctxt "#32237"
+msgid "Info"
+msgstr ""
+
+msgctxt "#32238"
+msgid "Context menu"
+msgstr ""
+
+msgctxt "#32239"
+msgid "None (only via command)"
+msgstr ""
+
+msgctxt "#32240"
+msgid "Show PiP again after seconds without key press (0 = no)"
+msgstr ""
+
+msgctxt "#32241"
+msgid "Kodi treats add-on overlays as modal. So that Kodi stays fully usable, any key except player keys hides the PiP and acts normally in Kodi. Once you stop pressing keys, the PiP comes back. Back/Exit closes it for good."
+msgstr ""
+
+msgctxt "#32242"
+msgid "Show key hint when opening"
+msgstr ""
+
+msgctxt "#32243"
+msgid "Shows for a few seconds which keys close the PiP or open the camera in full screen."
+msgstr ""
+
+msgctxt "#32300"
+msgid "Monitoring"
+msgstr ""
+
+msgctxt "#32301"
+msgid "Stall detection"
+msgstr ""
+
+msgctxt "#32310"
+msgid "Warning (yellow) after ms without new picture"
+msgstr ""
+
+msgctxt "#32311"
+msgid "Error (red) after ms without new picture"
+msgstr ""
+
+msgctxt "#32312"
+msgid "Kodi notification on error"
+msgstr ""
+
+msgctxt "#32313"
+msgid "Query Frigate statistics"
+msgstr ""
+
+msgctxt "#32314"
+msgid "A picture counts as new when its content changes. If Frigate keeps delivering the same picture, the stream is considered frozen."
+msgstr ""
+
+msgctxt "#32315"
+msgid "Shows whether the camera itself delivers frames to Frigate (camera_fps). Needs read access to /api/stats."
+msgstr ""
+
+msgctxt "#32400"
+msgid "Zoom"
+msgstr ""
+
+msgctxt "#32401"
+msgid "Image section"
+msgstr ""
+
+msgctxt "#32410"
+msgid "Enable zoom / image section"
+msgstr ""
+
+msgctxt "#32411"
+msgid "Needs the Python library Pillow. When off, pictures are shown unchanged and never decoded."
+msgstr ""
+
+msgctxt "#32412"
+msgid "Ask for section after selecting a camera"
+msgstr ""
+
+msgctxt "#32413"
+msgid "Applies to manual selection. Calls from Home Assistant always use the saved section (or full=1 for the whole picture)."
+msgstr ""
+
+msgctxt "#32414"
+msgid "Define section ..."
+msgstr ""
+
+msgctxt "#32415"
+msgid "Arrow keys move the frame, OK cycles the zoom, Back saves, Menu cancels."
+msgstr ""
+
+msgctxt "#32500"
+msgid "Camera full screen"
+msgstr ""
+
+msgctxt "#32501"
+msgid "RTSP stream (go2rtc in Frigate)"
+msgstr ""
+
+msgctxt "#32510"
+msgid "RTSP host (empty = Frigate server)"
+msgstr ""
+
+msgctxt "#32511"
+msgid "Only needed if the RTSP stream runs on a different host."
+msgstr ""
+
+msgctxt "#32512"
+msgid "RTSP port"
+msgstr ""
+
+msgctxt "#32513"
+msgid "RTSP user name"
+msgstr ""
+
+msgctxt "#32514"
+msgid "RTSP password"
+msgstr ""
+
+msgctxt "#32515"
+msgid "Stream name"
+msgstr ""
+
+msgctxt "#32516"
+msgid "{camera} is replaced by the camera name, e.g. {camera}_main for a separate main stream."
+msgstr ""
+
+msgctxt "#32517"
+msgid "Resume previous playback afterwards"
+msgstr ""
+
+msgctxt "#32518"
+msgid "When the camera stream is stopped, the previous video continues at its position or the previous TV channel is tuned again. Not if you started something else meanwhile."
+msgstr ""
+
+msgctxt "#32600"
+msgid "Error"
+msgstr ""
+
+msgctxt "#32601"
+msgid "Timeout while connecting to {host}:{port}"
+msgstr ""
+
+msgctxt "#32602"
+msgid "TLS error: {reason} (is HTTPS enabled on port {port}?)"
+msgstr ""
+
+msgctxt "#32603"
+msgid "Connection refused ({host}:{port})"
+msgstr ""
+
+msgctxt "#32604"
+msgid "Network error: {reason}"
+msgstr ""
+
+msgctxt "#32605"
+msgid "The server did not present a certificate"
+msgstr ""
+
+msgctxt "#32606"
+msgid "Certificate not confirmed yet (Settings > Fetch and trust certificate)"
+msgstr ""
+
+msgctxt "#32607"
+msgid "The certificate has changed! Received: {fingerprint}"
+msgstr ""
+
+msgctxt "#32608"
+msgid "Invalid certificate: {reason}"
+msgstr ""
+
+msgctxt "#32609"
+msgid "HTTP {status}"
+msgstr ""
+
+msgctxt "#32610"
+msgid "HTTP {status}: {detail}"
+msgstr ""
+
+msgctxt "#32611"
+msgid "Camera \"{camera}\" not found"
+msgstr ""
+
+msgctxt "#32612"
+msgid "Connection interrupted ({reason})"
+msgstr ""
+
+msgctxt "#32613"
+msgid "No response within {seconds} s"
+msgstr ""
+
+msgctxt "#32614"
+msgid "TLS error: {reason}"
+msgstr ""
+
+msgctxt "#32615"
+msgid "HTTP protocol error ({reason})"
+msgstr ""
+
+msgctxt "#32616"
+msgid "Login rejected (HTTP {status}) – check user name and password"
+msgstr ""
+
+msgctxt "#32617"
+msgid "Login rejected (HTTP {status}: {detail}) – check user name and password"
+msgstr ""
+
+msgctxt "#32618"
+msgid "Too many login attempts (HTTP 429) – please wait"
+msgstr ""
+
+msgctxt "#32619"
+msgid "Login failed (HTTP {status})"
+msgstr ""
+
+msgctxt "#32620"
+msgid "Login failed (HTTP {status}: {detail})"
+msgstr ""
+
+msgctxt "#32621"
+msgid "Frigate requires a login – enter a user name or use port 5000"
+msgstr ""
+
+msgctxt "#32622"
+msgid "Access denied (HTTP 401) despite successful login"
+msgstr ""
+
+msgctxt "#32623"
+msgid "Invalid JSON response from {path}"
+msgstr ""
+
+msgctxt "#32624"
+msgid "The response is not a JPEG picture"
+msgstr ""
+
+msgctxt "#32625"
+msgid "Could not store the picture: {reason}"
+msgstr ""
+
+msgctxt "#32626"
+msgid "Could not cut out the image section: {reason}"
+msgstr ""
+
+msgctxt "#32627"
+msgid "No Frigate API found (HTTP {status})"
+msgstr ""
+
+msgctxt "#32640"
+msgid "Error"
+msgstr ""
+
+msgctxt "#32641"
+msgid "No connection"
+msgstr ""
+
+msgctxt "#32642"
+msgid "Timeout"
+msgstr ""
+
+msgctxt "#32643"
+msgid "Login failed"
+msgstr ""
+
+msgctxt "#32644"
+msgid "Certificate rejected"
+msgstr ""
+
+msgctxt "#32645"
+msgid "Certificate not confirmed"
+msgstr ""
+
+msgctxt "#32646"
+msgid "Not found"
+msgstr ""
+
+msgctxt "#32647"
+msgid "No permission"
+msgstr ""
+
+msgctxt "#32648"
+msgid "Server error"
+msgstr ""
+
+msgctxt "#32700"
+msgid "connecting …"
+msgstr ""
+
+msgctxt "#32701"
+msgid "live"
+msgstr ""
+
+msgctxt "#32702"
+msgid "live · {fps} fps"
+msgstr ""
+
+msgctxt "#32703"
+msgid "delayed · {age}"
+msgstr ""
+
+msgctxt "#32704"
+msgid "picture frozen · {age}"
+msgstr ""
+
+msgctxt "#32705"
+msgid "PICTURE FROZEN · {age}"
+msgstr ""
+
+msgctxt "#32706"
+msgid "camera sends 0 fps to Frigate · {age}"
+msgstr ""
+
+msgctxt "#32707"
+msgid "CAMERA HAS NO SIGNAL · {age}"
+msgstr ""
+
+msgctxt "#32708"
+msgid "no response from Frigate · {age}"
+msgstr ""
+
+msgctxt "#32709"
+msgid "NO RESPONSE · {age}"
+msgstr ""
+
+msgctxt "#32710"
+msgid "no picture received · {age}"
+msgstr ""
+
+msgctxt "#32711"
+msgid "NO PICTURE · {age}"
+msgstr ""
+
+msgctxt "#32750"
+msgid "OK: camera full screen  ·  Back: close"
+msgstr ""
+
+msgctxt "#32751"
+msgid "Back: close  ·  other keys control Kodi"
+msgstr ""
+
+msgctxt "#32752"
+msgid "Image section for {camera}"
+msgstr ""
+
+msgctxt "#32753"
+msgid "Image section for {camera} – error: {error}"
+msgstr ""
+
+msgctxt "#32754"
+msgid "Arrows: move   ·   OK: zoom   ·   Back: apply   ·   Menu: cancel"
+msgstr ""
+
+msgctxt "#32755"
+msgid "Zoom {zoom}"
+msgstr ""
+
+msgctxt "#32756"
+msgid "{width}×{height} source pixels"
+msgstr ""
+
+msgctxt "#32757"
+msgid "Whole picture"
+msgstr ""
+
+msgctxt "#32800"
+msgid "Server: {url}"
+msgstr ""
+
+msgctxt "#32801"
+msgid "Certificate check: {mode}"
+msgstr ""
+
+msgctxt "#32802"
+msgid "[ERR] TLS connection: {error}"
+msgstr ""
+
+msgctxt "#32803"
+msgid "Certificate SHA-256: {fingerprint}"
+msgstr ""
+
+msgctxt "#32804"
+msgid "[!] No fingerprint stored yet – run \"Fetch and trust certificate\"."
+msgstr ""
+
+msgctxt "#32805"
+msgid "[ERR] The fingerprint does NOT match the stored one!"
+msgstr ""
+
+msgctxt "#32806"
+msgid "      stored: {fingerprint}"
+msgstr ""
+
+msgctxt "#32807"
+msgid "[OK] Fingerprint matches the stored one"
+msgstr ""
+
+msgctxt "#32808"
+msgid "[!] The certificate is not verified (insecure)"
+msgstr ""
+
+msgctxt "#32809"
+msgid "[!] Unencrypted (HTTP) – only use this in a trusted network"
+msgstr ""
+
+msgctxt "#32810"
+msgid "[!] {field} contains {chars} – typical for autocorrection (e.g. \"...\" becomes \"…\"). Please check!"
+msgstr ""
+
+msgctxt "#32811"
+msgid "[i] {field} contains {count} non-ASCII characters (e.g. umlauts) – just a note"
+msgstr ""
+
+msgctxt "#32812"
+msgid "[OK] Logged in as \"{user}\""
+msgstr ""
+
+msgctxt "#32813"
+msgid "[ERR] Login: {error}"
+msgstr ""
+
+msgctxt "#32814"
+msgid "Login: none configured (only suitable for port 5000)"
+msgstr ""
+
+msgctxt "#32815"
+msgid "Frigate version: {version}"
+msgstr ""
+
+msgctxt "#32816"
+msgid "[!] Version not available: {error}"
+msgstr ""
+
+msgctxt "#32817"
+msgid "[ERR] Camera list (/api/config): {error}"
+msgstr ""
+
+msgctxt "#32818"
+msgid "[OK] Cameras: {cameras}"
+msgstr ""
+
+msgctxt "#32819"
+msgid "{camera} (disabled)"
+msgstr ""
+
+msgctxt "#32820"
+msgid "[OK] Picture {camera}: {size} KB in {ms} ms"
+msgstr ""
+
+msgctxt "#32821"
+msgid "[ERR] Picture {camera}: {error}"
+msgstr ""
+
+msgctxt "#32822"
+msgid "[OK] Statistics: {cameras}"
+msgstr ""
+
+msgctxt "#32823"
+msgid "no camera data"
+msgstr ""
+
+msgctxt "#32824"
+msgid "[i] Statistics: no permission – stall detection still works"
+msgstr ""
+
+msgctxt "#32825"
+msgid "[!] Statistics: {error}"
+msgstr ""
+
+msgctxt "#32826"
+msgid "[OK] RTSP port {host}:{port} reachable (camera full screen: {url})"
+msgstr ""
+
+msgctxt "#32827"
+msgid "[i] No RTSP user configured – needed if go2rtc requires RTSP credentials"
+msgstr ""
+
+msgctxt "#32828"
+msgid "[!] RTSP port {host}:{port} not reachable ({error}) – camera full screen will not work"
+msgstr ""
+
+msgctxt "#32829"
+msgid "[OK] Zoom: Pillow {version} available"
+msgstr ""
+
+msgctxt "#32830"
+msgid "[ERR] Zoom is enabled, but Pillow (PIL) is missing"
+msgstr ""
+
+msgctxt "#32831"
+msgid "Test finished."
+msgstr ""
+
+msgctxt "#32832"
+msgid "[ERR] Unexpected error: {error} (details in kodi.log)"
+msgstr ""
+
+msgctxt "#32833"
+msgid "[ERR] No server configured – run the setup wizard first."
+msgstr ""
+
+msgctxt "#32834"
+msgid "User name"
+msgstr ""
+
+msgctxt "#32835"
+msgid "Password"
+msgstr ""
+
+msgctxt "#32900"
+msgid "Frigate PiP – setup"
+msgstr ""
+
+msgctxt "#32901"
+msgid "Frigate PiP shows your Frigate cameras as picture-in-picture.[CR]Set it up now? It takes about two minutes."
+msgstr ""
+
+msgctxt "#32902"
+msgid "This wizard connects Kodi to your Frigate server.[CR]You need: the address of the Frigate server and – if Frigate uses a login – a Frigate user (the \"viewer\" role is enough)."
+msgstr ""
+
+msgctxt "#32903"
+msgid "Address of the Frigate server (e.g. 192.168.1.10)"
+msgstr ""
+
+msgctxt "#32904"
+msgid "\"{address}\" is not a valid address.[CR]Enter a host name or IP address, optionally with a port, e.g. 192.168.1.10 or frigate.local:8971."
+msgstr ""
+
+msgctxt "#32905"
+msgid "Searching for Frigate …"
+msgstr ""
+
+msgctxt "#32906"
+msgid "Trying {url} …"
+msgstr ""
+
+msgctxt "#32907"
+msgid "No Frigate found.[CR]{details}[CR]Check the address and whether port 8971 (or 5000) is enabled in Frigate. Try again?"
+msgstr ""
+
+msgctxt "#32908"
+msgid "Port 8123 is Home Assistant. Please enter the address of the Frigate server – usually the same host without port, Frigate uses port 8971."
+msgstr ""
+
+msgctxt "#32909"
+msgid "Try again"
+msgstr ""
+
+msgctxt "#32910"
+msgid "Frigate found at {url}, but without encryption: your password would be sent in plain text through your network.[CR]Continue anyway?"
+msgstr ""
+
+msgctxt "#32911"
+msgid "Frigate found at {url}.[CR]This port has no login: everyone in your network can use the complete Frigate API there. Port 8971 with login is the safer choice.[CR]Continue anyway?"
+msgstr ""
+
+msgctxt "#32912"
+msgid "Frigate uses a self-signed certificate. Its SHA-256 fingerprint is:[CR]{fingerprint}[CR]If you want to be sure, compare it on the Frigate host. Trust this certificate for {host}:{port}?"
+msgstr ""
+
+msgctxt "#32913"
+msgid "Frigate user name"
+msgstr ""
+
+msgctxt "#32914"
+msgid "Password"
+msgstr ""
+
+msgctxt "#32915"
+msgid "The password contains {chars}. Such characters are often inserted by autocorrection (e.g. \"...\" becomes \"…\").[CR]Use the password as entered?"
+msgstr ""
+
+msgctxt "#32916"
+msgid "Logging in …"
+msgstr ""
+
+msgctxt "#32917"
+msgid "Login failed:[CR]{error}"
+msgstr ""
+
+msgctxt "#32918"
+msgid "Loading cameras …"
+msgstr ""
+
+msgctxt "#32919"
+msgid "Frigate does not report any active camera yet. You can choose the cameras later."
+msgstr ""
+
+msgctxt "#32920"
+msgid "Frigate could not be reached:[CR]{error}[CR]Try again?"
+msgstr ""
+
+msgctxt "#32921"
+msgid "Default camera (for the toggle key and calls without camera)"
+msgstr ""
+
+msgctxt "#32922"
+msgid "None – ask each time"
+msgstr ""
+
+msgctxt "#32923"
+msgid "Set up \"camera full screen\" now?[CR]It plays the camera stream (RTSP via go2rtc in Frigate) in the Kodi player. You can also do this later in the settings."
+msgstr ""
+
+msgctxt "#32924"
+msgid "RTSP user name (leave empty if go2rtc needs none)"
+msgstr ""
+
+msgctxt "#32925"
+msgid "RTSP password"
+msgstr ""
+
+msgctxt "#32926"
+msgid "The RTSP port {host}:{port} is not reachable ({error}). Camera full screen needs it – check the go2rtc/Frigate port settings later."
+msgstr ""
+
+msgctxt "#32928"
+msgid "Setup complete.[CR]Show a test picture of \"{camera}\" now?"
+msgstr ""
+
+msgctxt "#32929"
+msgid "Setup cancelled – nothing was changed"
+msgstr ""
+
+msgctxt "#32930"
+msgid "Setup complete"
+msgstr ""
+
+msgctxt "#32931"
+msgid "Cancel"
+msgstr ""
+
+msgctxt "#32933"
+msgid "Next"
+msgstr ""
+
+msgctxt "#32934"
+msgid "Yes"
+msgstr ""
+
+msgctxt "#32935"
+msgid "No"
+msgstr ""

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="script.frigate.pip" name="Frigate PiP" version="1.4.0" provider-name="flubshi">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.service" library="service.py"/>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">Frigate camera picture-in-picture for Kodi</summary>
+    <summary lang="de_DE">Frigate-Kamerabild als Bild-in-Bild in Kodi</summary>
+    <description lang="en_GB">Shows pictures of your Frigate NVR cameras as a small overlay on top of whatever is playing - for example when someone rings the doorbell. Trigger it from Home Assistant, a remote key or the add-on menu.[CR][CR]Features: login via Frigate's authenticated API with certificate pinning, visible stall detection (frozen picture, no signal, no response), several cameras at once, optional zoom into an image section, switching to the live RTSP stream in full screen and back, and a setup wizard.</description>
+    <description lang="de_DE">Zeigt Bilder deiner Frigate-NVR-Kameras als kleines Overlay über der laufenden Wiedergabe - zum Beispiel, wenn jemand klingelt. Auslösen per Home Assistant, Fernbedienungstaste oder über das Addon-Menü.[CR][CR]Funktionen: Login über die authentifizierte Frigate-API mit Zertifikats-Pinning, sichtbare Hänger-Erkennung (eingefrorenes Bild, kein Signal, keine Antwort), mehrere Kameras gleichzeitig, optionaler Zoom auf einen Bildausschnitt, Wechsel zum RTSP-Livestream im Vollbild und zurück sowie ein Einrichtungsassistent.</description>
+    <disclaimer lang="en_GB">This add-on is not affiliated with or endorsed by the Frigate project.</disclaimer>
+    <disclaimer lang="de_DE">Dieses Addon steht in keiner Verbindung zum Frigate-Projekt.</disclaimer>
+    <platform>all</platform>
+    <license>GPL-2.0-or-later</license>
+    <source>https://github.com/flubshi/script.frigate.pip</source>
+    <website>https://github.com/flubshi/script.frigate.pip</website>
+    <news>v1.4.0 (2026-11-03)
+- First public release
+- Setup wizard with automatic port and HTTPS detection
+- English user interface with German translation</news>
+    <assets>
+      <icon>resources/media/icon.png</icon>
+      <fanart>resources/media/fanart.jpg</fanart>
+    </assets>
+  </extension>
+</addon>

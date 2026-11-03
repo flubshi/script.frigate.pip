@@ -1,0 +1,34 @@
+# Tool configuration only - the add-on itself is not a Python package.
+
+[tool.ruff]
+line-length = 120
+target-version = "py38"            # Kodi 19 (Matrix) ships Python 3.8
+src = ["script.frigate.pip", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "B", "C4", "PIE", "SIM", "I", "UP", "RUF"]
+ignore = [
+    "UP031",   # %-formatting is used consistently for log messages
+    "UP004",   # explicit (object) base classes are harmless
+    "UP008",   # explicit super calls (Kodi classes use old-style __init__ calls)
+    "SIM105",  # try/except/pass is clearer than contextlib.suppress here
+    "RUF001",  # typographic characters (·, ×, –) in UI texts are intended
+    "RUF002",
+    "RUF003",
+    "B904",    # re-raising as a FrigateError deliberately hides the low-level traceback
+    "RUF005",  # list concatenation reads clearer in UI code
+    "RUF046",  # int(round(x)) documents the intent
+    "SIM108",  # if/else blocks are kept where a ternary would hurt readability
+]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**" = ["RUF012", "SIM115", "C408", "RUF015"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["resources"]
+known-third-party = ["xbmc", "xbmcaddon", "xbmcgui", "xbmcvfs"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+timeout = 120
+addopts = "-ra"

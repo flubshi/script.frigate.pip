@@ -1,0 +1,45 @@
+name: Bug report
+description: Something does not work as expected
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting! Please run **Settings → Connection → Test connection** first –
+        the report often points to the cause. Security problems: please see SECURITY.md instead.
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What did you do, what did you expect, what happened instead?
+    validations:
+      required: true
+  - type: input
+    id: addon
+    attributes:
+      label: Add-on version
+      placeholder: "1.4.0"
+    validations:
+      required: true
+  - type: input
+    id: kodi
+    attributes:
+      label: Kodi version and platform
+      placeholder: "Kodi 22 on LibreELEC 13, Raspberry Pi 5"
+    validations:
+      required: true
+  - type: input
+    id: frigate
+    attributes:
+      label: Frigate version and installation
+      placeholder: "0.18.2, Home Assistant add-on"
+    validations:
+      required: true
+  - type: textarea
+    id: log
+    attributes:
+      label: Log
+      description: |
+        Output of `grep script.frigate.pip kodi.log | tail -100`.
+        It contains no passwords, but check it for host names you do not want to share.
+      render: text
